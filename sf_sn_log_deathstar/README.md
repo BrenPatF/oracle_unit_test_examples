@@ -13,7 +13,7 @@ I in turn have taken Samuel's procedure, moved it into a package, reduced its sc
 
 The procedure, in my version, reads records from a master table and two detail tables each linked by a key_id field, and writes out the records from each detail table into two corresponding files. The master table may have multiple records for a given key_id, but the detail records should only be written once for a given key_id.
 
-There is a short recording on the subproject (2m005s): sf_sn_log_deathstar.mp4
+There is a short recording on the subproject (2m05s): sf_sn_log_deathstar.mp4
 
 ## In this README...
 [&darr; Installation](#installation)<br />
