@@ -13,6 +13,8 @@ The base code comes from interesting examples I have come across on the internet
 
 [Scanners IMDB](https://www.imdb.com/title/tt0081455/)
 
+There is a short recording on the project (2m05s): oracle_unit_test_examples.mp4
+
 ## In this README...
 [&darr; Background](#background)<br />
 [&darr; Scenario Category Analysis (SCAN)](#scenario-category-analysis-scan)<br />

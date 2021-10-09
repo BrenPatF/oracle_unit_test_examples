@@ -13,6 +13,8 @@ We need to get the reference date starting from the first row's date value of ea
 
 There are Model clause and recursive subquery solutions in the thread similar to the blog, although not Match_Recognize, which was not available at that time.
 
+There is a short recording on the subproject (2m08s): login_bursts.mp4
+
 ## In this README...
 [&darr; Installation](#installation)<br />
 [&darr; Unit Testing](#unit-testing)<br />

@@ -12,6 +12,8 @@ The table, investigation_details, holds identifiers for spray and pesticide agai
 
 I borrow Steven's example here to demonstrate my own approach to unit testing via the Math Function Unit Testing design pattern, copying his base code, but using my own framework to test it, and to demonstrate the SCAN method for scenario selection.
 
+There is a short recording on the subproject (2m017s): sf_epa_investigations.mp4
+
 ## In this README...
 [&darr; Installation](#installation)<br />
 [&darr; Unit Testing](#unit-testing)<br />
