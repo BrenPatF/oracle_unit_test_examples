@@ -1,0 +1,43 @@
+{
+    "meta":  {
+                 "title":  "title",
+                 "delimiter":  "|",
+                 "inp":  {
+                             "Table":  [
+                                           "Investigation Id",
+                                           "Spray Id",
+                                           "Pesticide Id"
+                                       ],
+                             "Parameters":  [
+                                                "Investigation Id",
+                                                "Spray Id",
+                                                "Pesticide Id"
+                                            ]
+                         },
+                 "out":  {
+                             "Table":  [
+                                           "Investigation Id",
+                                           "Spray Id",
+                                           "Pesticide Id"
+                                       ]
+                         }
+             },
+    "scenarios":  {
+                      "scenario 1":  {
+                                         "active_yn":  "Y",
+                                         "inp":  {
+                                                     "Table":  [
+                                                                   "||"
+                                                               ],
+                                                     "Parameters":  [
+                                                                        "||"
+                                                                    ]
+                                                 },
+                                         "out":  {
+                                                     "Table":  [
+                                                                   "||"
+                                                               ]
+                                                 }
+                                     }
+                  }
+}

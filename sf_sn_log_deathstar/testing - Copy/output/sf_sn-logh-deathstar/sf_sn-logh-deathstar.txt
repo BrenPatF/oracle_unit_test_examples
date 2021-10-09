@@ -1,0 +1,176 @@
+Unit Test Report: SF/SN Logh Deathstar
+======================================
+
+      #    Scenario         Fails (of 3)  Status 
+      ---  ---------------  ------------  -------
+      1*   Blanks           3             FAILURE
+      2*   1 simple record  3             FAILURE
+
+Test scenarios: 2 failed of 2: FAILURE
+======================================
+
+SCENARIO 1: Blanks {
+====================
+
+   INPUTS
+   ======
+
+      GROUP 1: Room Access {
+      ======================
+
+            #  Key Id  Room Name  Character Name
+            -  ------  ---------  --------------
+            1                                   
+
+      }
+      =
+
+      GROUP 2: Room Action {
+      ======================
+
+            #  Key Id  Action  Done By
+            -  ------  ------  -------
+            1                         
+
+      }
+      =
+
+      GROUP 3: Room Repair {
+      ======================
+
+            #  Key Id  Action  Completion  Repaired By
+            -  ------  ------  ----------  -----------
+            1                                         
+
+      }
+      =
+
+   OUTPUTS
+   =======
+
+      GROUP 1: File abcd {
+      ====================
+
+            #   Line       
+            --  -----------
+            1              
+            1*  *NO RECORD*
+
+      } 1 failed of 1: FAILURE
+      ========================
+
+      GROUP 2: File arty {
+      ====================
+
+            #   Line       
+            --  -----------
+            1              
+            1*  *NO RECORD*
+
+      } 1 failed of 1: FAILURE
+      ========================
+
+      GROUP 3: Unhandled Exception {
+      ==============================
+
+            #   Line                                                                                                                                                                                                                                         
+            --  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            1   *NO RECORD*                                                                                                                                                                                                                                  
+            1*  ORA-06502: PL/SQL: numeric or value error                                                                                                                                                                                                    
+            2   *NO RECORD*                                                                                                                                                                                                                                  
+            2*  ORA-06512: at "APP.FEUERTIPS_13", line 64
+ORA-06512: at "APP.FEUERTIPS_13", line 146
+ORA-06512: at "APP.TT_FEUERTIPS_13", line 98
+ORA-06512: at "APP.TT_FEUERTIPS_13", line 131
+ORA-06512: at line 1
+ORA-06512: at "LIB.TRAPIT_RUN", line 62
+
+
+      } 2 failed of 2: FAILURE
+      ========================
+
+} 3 failed of 3: FAILURE
+========================
+
+SCENARIO 2: 1 simple record {
+=============================
+
+   INPUTS
+   ======
+
+      GROUP 1: Room Access {
+      ======================
+
+            #  Key Id  Room Name  Character Name
+            -  ------  ---------  --------------
+            1  1       Room 1     Steve         
+
+      }
+      =
+
+      GROUP 2: Room Action {
+      ======================
+
+            #  Key Id  Action  Done By
+            -  ------  ------  -------
+            1  1       Enter   Sam    
+
+      }
+      =
+
+      GROUP 3: Room Repair {
+      ======================
+
+            #  Key Id  Action  Completion  Repaired By
+            -  ------  ------  ----------  -----------
+            1  1       Test    50%         Brendan    
+
+      }
+      =
+
+   OUTPUTS
+   =======
+
+      GROUP 1: File abcd {
+      ====================
+
+            #   Line       
+            --  -----------
+            1              
+            1*  *NO RECORD*
+
+      } 1 failed of 1: FAILURE
+      ========================
+
+      GROUP 2: File arty {
+      ====================
+
+            #   Line       
+            --  -----------
+            1              
+            1*  *NO RECORD*
+
+      } 1 failed of 1: FAILURE
+      ========================
+
+      GROUP 3: Unhandled Exception {
+      ==============================
+
+            #   Line                                                                                                                                                                                                                                         
+            --  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            1   *NO RECORD*                                                                                                                                                                                                                                  
+            1*  ORA-06502: PL/SQL: numeric or value error                                                                                                                                                                                                    
+            2   *NO RECORD*                                                                                                                                                                                                                                  
+            2*  ORA-06512: at "APP.FEUERTIPS_13", line 64
+ORA-06512: at "APP.FEUERTIPS_13", line 186
+ORA-06512: at "APP.TT_FEUERTIPS_13", line 98
+ORA-06512: at "APP.TT_FEUERTIPS_13", line 131
+ORA-06512: at line 1
+ORA-06512: at "LIB.TRAPIT_RUN", line 62
+
+
+      } 2 failed of 2: FAILURE
+      ========================
+
+} 3 failed of 3: FAILURE
+========================

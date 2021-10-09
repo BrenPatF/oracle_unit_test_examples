@@ -1,0 +1,56 @@
+{
+    "meta":  {
+                 "title":  "title",
+                 "delimiter":  "|",
+                 "inp":  {
+                             "Room Access":  [
+                                                 "Key Id",
+                                                 "Room Name",
+                                                 "Character Name"
+                                             ],
+                             "Room Action":  [
+                                                 "Key Id",
+                                                 "Action",
+                                                 "Done By"
+                                             ],
+                             "Room Repair":  [
+                                                 "Key Id",
+                                                 "Action",
+                                                 "Completion",
+                                                 "Repaired By"
+                                             ]
+                         },
+                 "out":  {
+                             "File room_action.log":  [
+                                                          "Line"
+                                                      ],
+                             "File room_repair.log":  [
+                                                          "Line"
+                                                      ]
+                         }
+             },
+    "scenarios":  {
+                      "scenario 1":  {
+                                         "active_yn":  "Y",
+                                         "inp":  {
+                                                     "Room Access":  [
+                                                                         "||"
+                                                                     ],
+                                                     "Room Action":  [
+                                                                         "||"
+                                                                     ],
+                                                     "Room Repair":  [
+                                                                         "|||"
+                                                                     ]
+                                                 },
+                                         "out":  {
+                                                     "File room_action.log":  [
+                                                                                  ""
+                                                                              ],
+                                                     "File room_repair.log":  [
+                                                                                  ""
+                                                                              ]
+                                                 }
+                                     }
+                  }
+}

@@ -1,0 +1,23 @@
+{
+    "meta":  {
+                 "title":  "title",
+                 "delimiter":  "|",
+                 "inp":  {
+
+                         },
+                 "out":  {
+
+                         }
+             },
+    "scenarios":  {
+                      "scenario 1":  {
+                                         "active_yn":  "Y",
+                                         "inp":  {
+
+                                                 },
+                                         "out":  {
+
+                                                 }
+                                     }
+                  }
+}

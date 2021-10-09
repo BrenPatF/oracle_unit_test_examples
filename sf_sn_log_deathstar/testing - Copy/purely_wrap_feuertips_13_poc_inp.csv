@@ -1,0 +1,11 @@
+group,field
+Room Access,Key Id
+Room Access,Room Name
+Room Access,Character Name
+Room Action,Key Id
+Room Action,Action
+Room Action,Done By
+Room Repair,Key Id
+Room Repair,Action
+Room Repair,Completion
+Room Repair,Repaired By

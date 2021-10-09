@@ -1,0 +1,33 @@
+{
+    "meta":  {
+                 "title":  "title",
+                 "delimiter":  "|",
+                 "inp":  {
+                             "Login":  [
+                                           "Person Id",
+                                           "Time"
+                                       ]
+                         },
+                 "out":  {
+                             "First Login":  [
+                                                 "Person Id",
+                                                 "Time"
+                                             ]
+                         }
+             },
+    "scenarios":  {
+                      "scenario 1":  {
+                                         "active_yn":  "Y",
+                                         "inp":  {
+                                                     "Login":  [
+                                                                   "|"
+                                                               ]
+                                                 },
+                                         "out":  {
+                                                     "First Login":  [
+                                                                         "|"
+                                                                     ]
+                                                 }
+                                     }
+                  }
+}

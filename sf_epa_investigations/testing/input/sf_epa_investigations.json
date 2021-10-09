@@ -1,0 +1,182 @@
+{
+  "meta": {
+         "title": "EPA Investigations",
+         "delimiter": "|",
+         "inp": {
+               "Table": [
+                      "Investigation Id",
+                      "Spray Id",
+                      "Pesticide Id"
+                    ],
+               "Parameters": [
+                        "Investigation Id",
+                        "Spray Id",
+                        "Pesticide Id"
+                      ]
+             },
+         "out": {
+               "Table": [
+                      "Investigation Id",
+                      "Spray Id",
+                      "Pesticide Id"
+                    ]
+             }
+       },
+  "scenarios": {
+           "NPN-NPN: S, P - parameter null": {
+                     "active_yn": "Y",
+                     "inp": {
+                           "Table": [
+                                    "100||2002"
+                                ],
+                           "Parameters": [
+                                    "100||"
+                                  ]
+                         },
+                     "out": {
+                           "Table": [
+                                    "100||2002"
+                                ]
+                         }
+                   },
+           "NVT-UPD: S - value in table, P - update slot": {
+                     "active_yn": "Y",
+                     "inp": {
+                           "Table": [
+                                    "100|1001|"
+                                ],
+                           "Parameters": [
+                                    "100|1001|2001"
+                                  ]
+                         },
+                     "out": {
+                           "Table": [
+                                    "100|1001|2001"
+                                ]
+                         }
+                   },
+           "NPN-IOR: S - parameter null, P - records for other investigation, with slots": {
+                     "active_yn": "Y",
+                     "inp": {
+                           "Table": [
+                                    "200||2002",
+                                    "300|2001|"
+                                ],
+                           "Parameters": [
+                                    "100||2001"
+                                  ]
+                         },
+                     "out": {
+                           "Table": [
+                                    "200||2002",
+                                    "300|2001|",
+                                    "100||2001"
+                                ]
+                         }
+                   },
+           "UPD-NPN: S - update slot, P - parameter null": {
+                     "active_yn": "Y",
+                     "inp": {
+                           "Table": [
+                                    "100||2001"
+                                ],
+                           "Parameters": [
+                                    "100|1001|"
+                                  ]
+                         },
+                     "out": {
+                           "Table": [
+                                    "100|1001|2001"
+                                ]
+                         }
+                   },
+           "UPD-UPD: S, P - update slot": {
+                     "active_yn": "Y",
+                     "inp": {
+                           "Table": [
+                                    "100||2001",
+                                    "100|1001|"
+                                ],
+                           "Parameters": [
+                                    "100|1002|2002"
+                                  ]
+                         },
+                     "out": {
+                           "Table": [
+                                    "100|1002|2001",
+                                    "100|1001|2002"
+                                ]
+                         }
+                   },
+           "UPD-INS: S - update slot, P - records but no slots": {
+                     "active_yn": "Y",
+                     "inp": {
+                           "Table": [
+                                    "100||2001"
+                                ],
+                           "Parameters": [
+                                    "100|1001|2002"
+                                  ]
+                         },
+                     "out": {
+                           "Table": [
+                                    "100|1001|2001",
+                                    "100||2002"
+                                ]
+                         }
+                   },
+           "INS-NVT: S - records but no slots, P - value in table": {
+                     "active_yn": "Y",
+                     "inp": {
+                           "Table": [
+                                    "100|1001|2001"
+                                ],
+                           "Parameters": [
+                                    "100|1002|2001"
+                                  ]
+                         },
+                     "out": {
+                           "Table": [
+                                    "100|1001|2001",
+                                    "100|1002|"
+                                ]
+                         }
+                   },
+           "IOR-UPD: S, P - records for other investigation, with slots": {
+                     "active_yn": "Y",
+                     "inp": {
+                           "Table": [
+                                    "100|1001|",
+                                    "200||2002",
+                                    "300|2001|"
+                                ],
+                           "Parameters": [
+                                    "100|1002|2001"
+                                  ]
+                         },
+                     "out": {
+                           "Table": [
+                                     "100|1001|2001",
+                                   "200||2002",
+                                    "300|2001|",
+                                    "100|1002|"
+                                ]
+                         }
+                   },
+           "INR-INR: S, P - no records": {
+                     "active_yn": "Y",
+                     "inp": {
+                           "Table": [
+                                ],
+                           "Parameters": [
+                                    "100|1001|2001"
+                                  ]
+                         },
+                     "out": {
+                           "Table": [
+                                    "100|1001|2001"
+                                ]
+                         }
+                   }
+         }
+}

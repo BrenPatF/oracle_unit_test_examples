@@ -1,0 +1,160 @@
+
+Database             Time                 Version
+-------------------- -------------------- ------------------------------
+Start: ORCL          09-OCT-2021 08:58:29 Version 19.3.0.0.0
+
+DROP TABLE log_deathstar_room_access
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+
+Table created.
+
+DROP TABLE log_deathstar_room_actions
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+
+Table created.
+
+DROP TABLE log_deathstar_room_repairs
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+
+Table created.
+
+Add the ut records
+
+PL/SQL procedure successfully completed.
+
+Packages creation
+=================
+Create package Feuertips_13 in 3 versions
+
+Package created.
+
+No errors.
+
+Package body created.
+
+No errors.
+
+Package created.
+
+No errors.
+
+Package body created.
+
+No errors.
+
+Package created.
+
+No errors.
+
+Package body created.
+
+No errors.
+Create package TT_Feuertips_13 in 3 versions
+
+Package created.
+
+
+Package body created.
+
+No errors.
+
+Package created.
+
+
+Package body created.
+
+No errors.
+
+Package created.
+
+
+Package body created.
+
+No errors.
+Run example script
+
+PL/SQL procedure successfully completed.
+
+log_deathstar_room_access
+
+KEY_ID ROOM_NAME       CHARACTER_NAME
+------ --------------- ---------------
+     1 Bridge          Darth Vader
+       Bridge          Mace Windu
+     2 Engine Room 1   R2D2
+
+log_deathstar_room_actions
+
+KEY_ID ACTION               DONE_BY
+------ -------------------- ---------------
+     1 Activate Lightsaber  Darth Vader
+       Activate Lightsaber  Mace Windu
+       Attack               Mace Windu
+       Enter                Darth Vader
+       Enter                Mace Windu
+       Jump up              Darth Vader
+       Sit down             Darth Vader
+     2 Beep                 R2D2
+       Enter                R2D2
+       Hack Console         R2D2
+
+10 rows selected.
+
+log_deathstar_room_repairs
+
+KEY_ID ACTION               REPAIR_COMPLETI REPAIRED_BY
+------ -------------------- --------------- ---------------
+     1 Analyze              53%             The Repairman
+       Fix it               95%             Lady Skillful
+       Inspect              50%             The Repairman
+       Investigate          57%             The Repairman
+     2 Analyze              25%             The Repairman
+       Fix it               100%            Lady Skillful
+
+6 rows selected.
+
+.
+File room_action.log has lines...
+=================================
+1|Bridge|Darth Vader|Enter
+1|Bridge|Darth Vader|Sit down
+1|Bridge|Mace Windu|Enter
+1|Bridge|Mace Windu|Activate Lightsaber
+1|Bridge|Darth Vader|Jump up
+1|Bridge|Darth Vader|Activate Lightsaber
+1|Bridge|Mace Windu|Attack
+2|Engine Room 1|R2D2|Enter
+2|Engine Room 1|R2D2|Hack Console
+2|Engine Room 1|R2D2|Beep
+.
+File room_repair.log has lines...
+=================================
+1|Bridge|50%|The Repairman|Inspect
+1|Bridge|53%|The Repairman|Analyze
+1|Bridge|57%|The Repairman|Investigate
+1|Bridge|95%|Lady Skillful|Fix it
+2|Engine Room 1|25%|The Repairman|Analyze
+2|Engine Room 1|100%|Lady Skillful|Fix it
+
+PL/SQL procedure successfully completed.
+
+
+Rollback complete.
+
+
+'END:'||TO_CHAR(SYSDATE,'DD-MON-YY
+----------------------------------
+End: 09-OCT-2021 08:58:30
+

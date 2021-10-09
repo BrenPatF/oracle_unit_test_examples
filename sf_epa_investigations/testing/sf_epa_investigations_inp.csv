@@ -1,0 +1,7 @@
+group,field
+Table,Investigation Id
+Table,Spray Id
+Table,Pesticide Id
+Parameters,Investigation Id
+Parameters,Spray Id
+Parameters,Pesticide Id

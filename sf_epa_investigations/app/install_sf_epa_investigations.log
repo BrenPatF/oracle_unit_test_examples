@@ -1,0 +1,74 @@
+
+Database             Time                 Version
+-------------------- -------------------- ------------------------------
+Start: ORCL          09-OCT-2021 08:55:35 Version 19.3.0.0.0
+
+DROP TABLE investigation_details
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+
+Table created.
+
+Add the ut records
+
+PL/SQL procedure successfully completed.
+
+Packages creation
+=================
+Create package Investigation_Mgr
+
+Package created.
+
+No errors.
+
+Package body created.
+
+No errors.
+Create package TT_Investigation_Mgr
+
+Package created.
+
+
+Package body created.
+
+No errors.
+Call procedure as example three times...
+
+PL/SQL procedure successfully completed.
+
+  1  BEGIN
+  2     investigation_mgr.pack_details(
+  3        p_investigation_id  => 100,
+  4        p_pesticide_id      => 123,
+  5        p_spray_id          => 789
+  6     );
+  7
+  8     investigation_mgr.pack_details(
+  9        p_investigation_id  => 100,
+ 10        p_pesticide_id      => 123,
+ 11        p_spray_id          => 789
+ 12     );
+ 13
+ 14     investigation_mgr.pack_details(
+ 15        p_investigation_id  => 100,
+ 16        p_pesticide_id      => null,
+ 17        p_spray_id          => 789
+ 18     );
+ 19* END;
+Example data created by calls...
+
+        ID INVESTIGATION_ID   SPRAY_ID PESTICIDE_ID
+---------- ---------------- ---------- ------------
+         1              100        789          123
+
+
+Rollback complete.
+
+
+'END:'||TO_CHAR(SYSDATE,'DD-MON-YY
+----------------------------------
+End: 09-OCT-2021 08:55:35
+

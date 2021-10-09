@@ -1,0 +1,78 @@
+
+Database             Time                 Version
+-------------------- -------------------- ------------------------------
+Start: ORCL          09-OCT-2021 08:52:55 Version 19.3.0.0.0
+
+DROP TABLE logins
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+
+Table created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+Insert the example logins
+
+PL/SQL procedure successfully completed.
+
+Example data
+
+PERSONID   LOGIN_TIME
+---------- --------------
+1          01012021 00:00
+           01012021 01:00
+           01012021 01:59
+           01012021 02:00
+           01012021 02:39
+           01012021 03:00
+           01012021 04:59
+2          01012021 01:01
+           01012021 01:30
+           01012021 02:00
+           01012021 05:00
+           01012021 06:00
+
+12 rows selected.
+
+Solution for example data
+
+PERSONID   BLOCK_ST
+---------- --------
+1          01 00:00
+           01 02:39
+           01 04:59
+2          01 01:01
+           01 05:00
+
+Add the ut records
+
+PL/SQL procedure successfully completed.
+
+Packages creation
+=================
+Create package TT_Login_Bursts
+
+Package created.
+
+
+Package body created.
+
+No errors.
+
+'END:'||TO_CHAR(SYSDATE,'DD-MON-YY
+----------------------------------
+End: 09-OCT-2021 08:52:55
+
