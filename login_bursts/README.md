@@ -13,7 +13,14 @@ We need to get the reference date starting from the first row's date value of ea
 
 There are Model clause and recursive subquery solutions in the thread similar to the blog, although not Match_Recognize, which was not available at that time.
 
-There is a short recording on the subproject (2m08s): login_bursts.mp4
+There are four short recordings on the project (around 2m each), which can also be viewed via a Twitter thread:
+
+|   | Folder                | Recording                     | Tweet  |
+|:-:|:----------------------|:------------------------------|:-------|
+|   | .                     | oracle_unit_test_examples.mp4 |        |
+| * | login_bursts          | login_bursts.mp4              |        |
+|   | sf_epa_investigations | sf_epa_investigations.mp4     |        |
+|   | sf_sn_log_deathstar   | sf_sn_log_deathstar.mp4       |        |
 
 ## In this README...
 [&darr; Installation](#installation)<br />
@@ -294,10 +301,10 @@ tt_login_bursts.purely_wrap_view_ana_out.json
 
 You can review the HTML formatted unit test results for the four queries here:
 
-- [Unit Test Report: Login Bursts - Analytics](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/master/testing/output/login-bursts---analytics/login-bursts---analytics.html)
-- [Unit Test Report: Login Bursts - Match_Recognize](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/master/testing/output/login-bursts---match_recognize/login-bursts---match_recognize.html)
-- [Unit Test Report: Login Bursts - Model](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/master/testing/output/login-bursts---model/login-bursts---model.html)
-- [Unit Test Report: Login Bursts - Recursive](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/master/testing/output/login-bursts---recursive/login-bursts---recursive.html)
+- [Unit Test Report: Login Bursts - Analytics](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/login_bursts/testing/output/login-bursts---analytics/login-bursts---analytics.html)
+- [Unit Test Report: Login Bursts - Match_Recognize](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/login_bursts/testing/output/login-bursts---match_recognize/login-bursts---match_recognize.html)
+- [Unit Test Report: Login Bursts - Model](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/login_bursts/testing/output/login-bursts---model/login-bursts---model.html)
+- [Unit Test Report: Login Bursts - Recursive](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/login_bursts/testing/output/login-bursts---recursive/login-bursts---recursive.html)
 
 
 The formatted results files, both text and HTML, are available in the `testing/output` subfolders. The summary reports showing scenarios tested, in text format, for two of the queries are copied below:

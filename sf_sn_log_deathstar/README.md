@@ -13,7 +13,14 @@ I in turn have taken Samuel's procedure, moved it into a package, reduced its sc
 
 The procedure, in my version, reads records from a master table and two detail tables each linked by a key_id field, and writes out the records from each detail table into two corresponding files. The master table may have multiple records for a given key_id, but the detail records should only be written once for a given key_id.
 
-There is a short recording on the subproject (2m05s): sf_sn_log_deathstar.mp4
+There are four short recordings on the project (around 2m each), which can also be viewed via a Twitter thread:
+
+|   | Folder                | Recording                     | Tweet  |
+|:-:|:----------------------|:------------------------------|:-------|
+|   | .                     | oracle_unit_test_examples.mp4 |        |
+|   | login_bursts          | login_bursts.mp4              |        |
+|   | sf_epa_investigations | sf_epa_investigations.mp4     |        |
+| * | sf_sn_log_deathstar   | sf_sn_log_deathstar.mp4       |        |
 
 ## In this README...
 [&darr; Installation](#installation)<br />
@@ -391,9 +398,9 @@ tt_feuertips_13_v1.purely_wrap_feuertips_13_poc_out.json
 
 You can review the HTML formatted unit test results for the three versions here:
 
-- [Unit Test Report: Feuertips 13 - Base](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/master/testing/output/feuertips-13---base/feuertips-13---base.html)
-- [Unit Test Report: Feuertips 13 - v1](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/master/testing/output/feuertips-13---v1/feuertips-13---v1.html)
-- [Unit Test Report: Feuertips 13 - v2](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/master/testing/output/feuertips-13---v2/feuertips-13---v2.html)
+- [Unit Test Report: Feuertips 13 - Base](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/sf_sn_log_deathstar/testing/output/feuertips-13---base/feuertips-13---base.html)
+- [Unit Test Report: Feuertips 13 - v1](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/sf_sn_log_deathstar/testing/output/feuertips-13---v1/feuertips-13---v1.html)
+- [Unit Test Report: Feuertips 13 - v2](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/sf_sn_log_deathstar/testing/output/feuertips-13---v2/feuertips-13---v2.html)
 
 
 The formatted results files, both text and HTML, are available in the `testing/output` subfolders. The summary reports showing scenarios tested, in text format, for all three versions are copied below, with explanations for each of the two bugs found:

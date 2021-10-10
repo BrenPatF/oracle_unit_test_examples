@@ -12,7 +12,14 @@ The table, investigation_details, holds identifiers for spray and pesticide agai
 
 I borrow Steven's example here to demonstrate my own approach to unit testing via the Math Function Unit Testing design pattern, copying his base code, but using my own framework to test it, and to demonstrate the SCAN method for scenario selection.
 
-There is a short recording on the subproject (2m017s): sf_epa_investigations.mp4
+There are four short recordings on the project (around 2m each), which can also be viewed via a Twitter thread:
+
+|   | Folder                | Recording                     | Tweet  |
+|:-:|:----------------------|:------------------------------|:-------|
+|   | .                     | oracle_unit_test_examples.mp4 |        |
+|   | login_bursts          | login_bursts.mp4              |        |
+| * | sf_epa_investigations | sf_epa_investigations.mp4     |        |
+|   | sf_sn_log_deathstar   | sf_sn_log_deathstar.mp4       |        |
 
 ## In this README...
 [&darr; Installation](#installation)<br />
@@ -341,7 +348,7 @@ Unit Test Results Summary for Folder ./externals/oracle_unit_test_examples
 
 You can review the HTML formatted unit test results for the program here: 
 
-- [Unit Test Report: EPA Investigations](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/master/sf_epa_investigations/testing/output/epa-investigations/epa-investigations.html)
+- [Unit Test Report: EPA Investigations](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/sf_epa_investigations/testing/output/epa-investigations/epa-investigations.html)
 
 The formatted results files, both text and HTML, are available in the `testing/output/epa-investigations` subfolder. The summary report showing scenarios tested, in text format, is copied below:
 

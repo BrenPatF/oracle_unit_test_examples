@@ -13,7 +13,14 @@ The base code comes from interesting examples I have come across on the internet
 
 [Scanners IMDB](https://www.imdb.com/title/tt0081455/)
 
-There is a short recording on the project (2m05s): oracle_unit_test_examples.mp4
+There are four short recordings on the project (around 2m each), which can also be viewed via a Twitter thread:
+
+|   | Folder                | Recording                     | Tweet  |
+|:-:|:----------------------|:------------------------------|:-------|
+| * | .                     | oracle_unit_test_examples.mp4 |        |
+|   | login_bursts          | login_bursts.mp4              |        |
+|   | sf_epa_investigations | sf_epa_investigations.mp4     |        |
+|   | sf_sn_log_deathstar   | sf_sn_log_deathstar.mp4       |        |
 
 ## In this README...
 [&darr; Background](#background)<br />
@@ -47,7 +54,7 @@ Each example has its own subproject, and has a link to the source for the exampl
 [&uarr; In this README...](#in-this-readme)<br />
 [&darr; Input Data Category Sets](#input-data-category-sets)<br />
 [&darr; Simple Category Sets](#simple-category-sets)<br />
-[&darr; Combination Category Sets](#combination-category-sets)<br />
+[&darr; Composite Category Sets](#composite-category-sets)<br />
 [&darr; Scenario Category Mapping](#scenario-category-mapping)
 
 ### Input Data Category Sets
@@ -80,7 +87,7 @@ This section shows a simple generic way of tabulating a category set. We would c
 | Cat-1 | Description of category 1 |
 | Cat-2 | Description of category 2 |
 
-### Combination Category Sets
+### Composite Category Sets
 [&uarr; Scenario Category Analysis (SCAN)](#scenario-category-analysis-scan)
 
 While many category sets can be tested independently of others as in the value size example mentioned above, in other cases we may need to consider categories in combination. For example, in the context of sales orders it is common for unit prices to be banded according to quantity ordered, and it is possible (though maybe not so common) for quantities of different items to affect each others' unit prices.
