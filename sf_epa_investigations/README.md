@@ -14,12 +14,12 @@ I borrow Steven's example here to demonstrate my own approach to unit testing vi
 
 There are four short recordings on the project (around 2m each), which can also be viewed via a Twitter thread:
 
-|   | Folder                | Recording                     | Tweet  |
-|:-:|:----------------------|:------------------------------|:-------|
-|   | .                     | oracle_unit_test_examples.mp4 |        |
-|   | login_bursts          | login_bursts.mp4              |        |
-| * | sf_epa_investigations | sf_epa_investigations.mp4     |        |
-|   | sf_sn_log_deathstar   | sf_sn_log_deathstar.mp4       |        |
+|   | Folder                | Recording                     | Tweet                                                                                   |
+|:-:|:----------------------|:------------------------------|:----------------------------------------------------------------------------------------|
+|   | .                     | oracle_unit_test_examples.mp4 | [1: oracle_unit_test_examples](https://twitter.com/BrenPatF/status/1447145129828098050) |
+|   | login_bursts          | login_bursts.mp4              |                                                                                         |
+| * | sf_epa_investigations | sf_epa_investigations.mp4     |                                                                                         |
+|   | sf_sn_log_deathstar   | sf_sn_log_deathstar.mp4       |                                                                                         |
 
 ## In this README...
 [&darr; Installation](#installation)<br />
