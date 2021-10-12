@@ -19,7 +19,7 @@ There are four short recordings on the project (around 2m each), which can also 
 |:-:|:----------------------|:------------------------------|:----------------------------------------------------------------------------------------|
 |   | .                     | oracle_unit_test_examples.mp4 | [1: oracle_unit_test_examples](https://twitter.com/BrenPatF/status/1447145129828098050) |
 | * | login_bursts          | login_bursts.mp4              | [2: login_bursts](https://twitter.com/BrenPatF/status/1447441450229194754)              |
-|   | sf_epa_investigations | sf_epa_investigations.mp4     |                                                                                         |
+|   | sf_epa_investigations | sf_epa_investigations.mp4     | [2: sf_epa_investigations](https://twitter.com/BrenPatF/status/1447805483415445506)     |
 |   | sf_sn_log_deathstar   | sf_sn_log_deathstar.mp4       |                                                                                         |
 
 ## In this README...
@@ -205,10 +205,10 @@ In this section we identify the category sets for the problem, and tabulate the 
 
 Check works correctly with both 1 and multiple persons.
 
-| Code | Description                                 |
-|:----:|:--------------------------------------------|
-|   1  | One                                         |
-|   2  | Multiple (2 sufficent to repreent multiple) |
+| Code | Description                                  |
+|:----:|:---------------------------------------------|
+|   1  | One                                          |
+|   2  | Multiple (2 sufficent to represent multiple) |
 
 ###### MUL-L - Multiplicity for login groups per person (or MUL-L1, MUL-L2 for person 1, person 2 etc.)
 
