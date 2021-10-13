@@ -1,5 +1,5 @@
 # Oracle  Unit Test Examples / login_bursts
-This subproject belongs to the parent project: Oracle Unit Test Examples, which contains examples of unit testing of Oracle SQL queries and PL/SQL code using the 'Math Function Unit Testing' design pattern. The project introduces a new general method for choosing unit test scenarios, Scenario Category ANalysis (SCAN).
+This subproject belongs to the parent projectgroups per person  Oracle Unit Test Examples, which contains examples of unit testing of Oracle SQL queries and PL/SQL code using the 'Math Function Unit Testing' design pattern. The project introduces a new general method for choosing unit test scenarios, Scenario Category ANalysis (SCAN).
 
 In this design pattern unit testing is data driven from a JSON file containing input data together with expected output data for a set of scenarios. The SCAN method involves creating high level scenarios as combinations of categories within category sets for the specific problem. These high level scenarios are then implemented in the JSON file by creating data to match the categories. Each subproject illusatrates the process of category set analysis and mapping onto scenarios for a specific problem.
 
@@ -20,7 +20,7 @@ There are four short recordings on the project (around 2m each), which can also 
 |   | .                     | oracle_unit_test_examples.mp4 | [1: oracle_unit_test_examples](https://twitter.com/BrenPatF/status/1447145129828098050) |
 | * | login_bursts          | login_bursts.mp4              | [2: login_bursts](https://twitter.com/BrenPatF/status/1447441450229194754)              |
 |   | sf_epa_investigations | sf_epa_investigations.mp4     | [3: sf_epa_investigations](https://twitter.com/BrenPatF/status/1447805483415445506)     |
-|   | sf_sn_log_deathstar   | sf_sn_log_deathstar.mp4       |                                                                                         |
+|   | sf_sn_log_deathstar   | sf_sn_log_deathstar.mp4       | [4: sf_sn_log_deathstar](https://twitter.com/BrenPatF/status/1448165085831127040)       |
 
 ## In this README...
 [&darr; Installation](#installation)<br />
@@ -36,12 +36,12 @@ There are four short recordings on the project (around 2m each), which can also 
 ### Prerequisites
 [&uarr; Installation](#installation)
 
-The common project prerequisites must be installed from the project root README, [Oracle Unit Test Examples: Installation](../../../#installation)
+The common project prerequisites must be installed from the project root README, [Oracle Unit Test Examplesgroups per person  Installation](../../../#installation)
 
 ### Install login_bursts
 [&uarr; Installation](#installation)
 
-#### [Schema: app; Folder: login_bursts/app]
+#### [Schemagroups per person  app; Foldergroups per person  login_bursts/app]
 
 - Run script from slqplus:
 
@@ -93,7 +93,7 @@ PERSONID   BLOCK_ST
 ### Unit Testing Process
 [&uarr; Unit Testing](#unit-testing)<br />
 
-The package is tested using the Math Function Unit Testing design pattern, described here in its Oracle version: [Trapit - Oracle PL/SQL unit testing module](https://github.com/BrenPatF/trapit_oracle_tester). In this approach, a 'pure' wrapper function is constructed that takes input parameters and returns a value, and is tested within a loop over scenario records read from a JSON file.
+The package is tested using the Math Function Unit Testing design pattern, described here in its Oracle versiongroups per person  [Trapit - Oracle PL/SQL unit testing module](https://github.com/BrenPatF/trapit_oracle_tester). In this approach, a 'pure' wrapper function is constructed that takes input parameters and returns a value, and is tested within a loop over scenario records read from a JSON file.
 
 Unit testing is data-driven from the input file login_bursts.json and produces an output results file for each program tested, in the Oracle directory `INPUT_DIR`. These contain arrays of expected and actual records by group and scenario, and in this case there are four files corresponding to the four queries tested.
 
@@ -103,7 +103,7 @@ The unit test program may be run from the Oracle app subfolder:
 SQL> @r_tests
 ```
 
-The output results files are processed by a nodejs program that has to be installed separately, as described in the [Oracle Unit Test Examples: README instructions](https://github.com/BrenPatF/oracle_unit_test_examples/blob/master/README.md#installation). The nodejs program produces listings of the results in HTML and/or text format in a subfolder named from the unit test title, and the four subfolders are included in the folder `testing\output`. 
+The output results files are processed by a nodejs program that has to be installed separately, as described in the [Oracle Unit Test Examplesgroups per person  README instructions](https://github.com/BrenPatF/oracle_unit_test_examples/blob/master/README.md#installation). The nodejs program produces listings of the results in HTML and/or text format in a subfolder named from the unit test title, and the four subfolders are included in the folder `testing\output`. 
 
 To run the processor, open a powershell window in the npm trapit package folder after placing the four output JSON files, tt_login_bursts.purely_wrap_view_*_out.json, in a new (or existing) folder, oracle_unit_test_examples, within the subfolder externals and run:
 
@@ -217,7 +217,7 @@ Check works correctly with both 1 and multiple logins per person.
 | Code | Description                       |
 |:----:|:----------------------------------|
 |   1  | One login group per person        |
-|   m  | Multiple login groupss per person |
+|   m  | Multiple login groups per person  |
 
 ###### SEP - Group separation
 
@@ -278,8 +278,8 @@ In this case, the first three category sets may be considered as a single compos
 #### Scenario Results
 [&uarr; Unit Test Scenarios](#unit-test-scenarios)<br />
 [&darr; Results Summary](#results-summary)<br />
-[&darr; Unit Test Report: Login Bursts - Model](#unit-test-report-login-bursts---model)<br />
-[&darr; Unit Test Report: Login Bursts - Analytics](#unit-test-report-login-bursts---analytics)<br />
+[&darr; Unit Test Reportgroups per person  Login Bursts - Model](#unit-test-report-login-bursts---model)<br />
+[&darr; Unit Test Reportgroups per person  Login Bursts - Analytics](#unit-test-report-login-bursts---analytics)<br />
 
 ##### Results Summary
 [&uarr; Scenario Results](#scenario-results)
@@ -301,18 +301,18 @@ tt_login_bursts.purely_wrap_view_ana_out.json
 
 You can review the HTML formatted unit test results for the four queries here:
 
-- [Unit Test Report: Login Bursts - Analytics](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/login_bursts/testing/output/login-bursts---analytics/login-bursts---analytics.html)
-- [Unit Test Report: Login Bursts - Match_Recognize](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/login_bursts/testing/output/login-bursts---match_recognize/login-bursts---match_recognize.html)
-- [Unit Test Report: Login Bursts - Model](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/login_bursts/testing/output/login-bursts---model/login-bursts---model.html)
-- [Unit Test Report: Login Bursts - Recursive](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/login_bursts/testing/output/login-bursts---recursive/login-bursts---recursive.html)
+- [Unit Test Reportgroups per person  Login Bursts - Analytics](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/login_bursts/testing/output/login-bursts---analytics/login-bursts---analytics.html)
+- [Unit Test Reportgroups per person  Login Bursts - Match_Recognize](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/login_bursts/testing/output/login-bursts---match_recognize/login-bursts---match_recognize.html)
+- [Unit Test Reportgroups per person  Login Bursts - Model](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/login_bursts/testing/output/login-bursts---model/login-bursts---model.html)
+- [Unit Test Reportgroups per person  Login Bursts - Recursive](http://htmlpreview.github.io/?https://github.com/BrenPatF/oracle_unit_test_examples/blob/main/login_bursts/testing/output/login-bursts---recursive/login-bursts---recursive.html)
 
 
 The formatted results files, both text and HTML, are available in the `testing/output` subfolders. The summary reports showing scenarios tested, in text format, for two of the queries are copied below:
 
-#### Unit Test Report: Login Bursts - Model
+#### Unit Test Reportgroups per person  Login Bursts - Model
 [&uarr; Scenario Results](#scenario-results)
 ```
-Unit Test Report: Login Bursts - Model
+Unit Test Reportgroups per person  Login Bursts - Model
 ======================================
 
       #    Scenario                                                           Fails (of 2)  Status 
@@ -321,14 +321,14 @@ Unit Test Report: Login Bursts - Model
       2    MUL-P / MUL-L1 / MUL-L2 / SEP / GAD / SIM = 1 / 3 / - / B / 2 / N  0             SUCCESS
       3    MUL-P / MUL-L1 / MUL-L2 / SEP / GAD / SIM = 2 / 3 / 2 / B / 1 / Y  0             SUCCESS
 
-Test scenarios: 0 failed of 3: SUCCESS
+Test scenariosgroups per person  0 failed of 3groups per person  SUCCESS
 ======================================
 ```
 
-#### Unit Test Report: Login Bursts - Analytics
+#### Unit Test Reportgroups per person  Login Bursts - Analytics
 [&uarr; Scenario Results](#scenario-results)
 ```
-Unit Test Report: Login Bursts - Analytics
+Unit Test Reportgroups per person  Login Bursts - Analytics
 ==========================================
 
       #    Scenario                                                           Fails (of 2)  Status 
@@ -337,20 +337,20 @@ Unit Test Report: Login Bursts - Analytics
       2*   MUL-P / MUL-L1 / MUL-L2 / SEP / GAD / SIM = 1 / 3 / - / B / 2 / N  1             FAILURE
       3*   MUL-P / MUL-L1 / MUL-L2 / SEP / GAD / SIM = 2 / 3 / 2 / B / 1 / Y  1             FAILURE
 
-Test scenarios: 2 failed of 3: FAILURE
+Test scenariosgroups per person  2 failed of 3groups per person  FAILURE
 ======================================
 ```
 
 The detailed report for the second scenario, in text format, is copied below:
 
 <pre>
-SCENARIO 2: MUL-P / MUL-L1 / MUL-L2 / SEP / GAD / SIM = 1 / 3 / - / B / 2 / N {
+SCENARIO 2groups per person  MUL-P / MUL-L1 / MUL-L2 / SEP / GAD / SIM = 1 / 3 / - / B / 2 / N {
 ===============================================================================
 
    INPUTS
    ======
 
-      GROUP 1: Login {
+      GROUP 1groups per person  Login {
       ================
 
             #  Person Id  Time          
@@ -367,7 +367,7 @@ SCENARIO 2: MUL-P / MUL-L1 / MUL-L2 / SEP / GAD / SIM = 1 / 3 / - / B / 2 / N {
    OUTPUTS
    =======
 
-      GROUP 1: First Login {
+      GROUP 1groups per person  First Login {
       ======================
 
             #   Person Id    Time    
@@ -381,17 +381,17 @@ SCENARIO 2: MUL-P / MUL-L1 / MUL-L2 / SEP / GAD / SIM = 1 / 3 / - / B / 2 / N {
             5   *NO RECORD*          
             5*  Adam         07 00:30
 
-      } 3 failed of 5: FAILURE
+      } 3 failed of 5groups per person  FAILURE
       ========================
 
-      GROUP 2: Unhandled Exception: Empty as expected: SUCCESS
+      GROUP 2groups per person  Unhandled Exceptiongroups per person  Empty as expectedgroups per person  SUCCESS
       ========================================================
 
-} 1 failed of 2: FAILURE
+} 1 failed of 2groups per person  FAILURE
 ========================
 </pre>
 
 ## See Also
 [&uarr; In this README...](#in-this-readme)<br />
 
-- [Oracle Unit Test Examples: See Also](../../../#see-also)
+- [Oracle Unit Test Examplesgroups per person  See Also](../../../#see-also)

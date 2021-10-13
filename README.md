@@ -20,7 +20,7 @@ There are four short recordings on the project (around 2m each), which can also 
 | * | .                     | oracle_unit_test_examples.mp4 | [1: oracle_unit_test_examples](https://twitter.com/BrenPatF/status/1447145129828098050) |
 |   | login_bursts          | login_bursts.mp4              | [2: login_bursts](https://twitter.com/BrenPatF/status/1447441450229194754)              |
 |   | sf_epa_investigations | sf_epa_investigations.mp4     | [3: sf_epa_investigations](https://twitter.com/BrenPatF/status/1447805483415445506)     |
-|   | sf_sn_log_deathstar   | sf_sn_log_deathstar.mp4       |                                                                                         |
+|   | sf_sn_log_deathstar   | sf_sn_log_deathstar.mp4       | [4: sf_sn_log_deathstar](https://twitter.com/BrenPatF/status/1448165085831127040)       |
 
 ## In this README...
 [&darr; Background](#background)<br />
@@ -39,7 +39,7 @@ I created the [Trapit Oracle PL/SQL unit testing module](https://github.com/Bren
 In 2018 I named the approach 'The Math Function Unit Testing design pattern', and developed a JavaScript module supporting its use in JavaScript unit testing, and formatting unit test results in both text and HTML:
 - [The Math Function Unit Testing design pattern, implemented in nodejs](https://github.com/BrenPatF/trapit_nodejs_tester)
 
-The module also formats unit test results produced by programs in any language that follow the pattern and produce a JSON results files in the required format. After creating the JavaScript module, I converted the original Oracle Trapit module to use JSON files for both input and output in the required format:
+The module also formats unit test results produced by programs in any language that follow the pattern and produce JSON results files in the required format. After creating the JavaScript module, I converted the original Oracle Trapit module to use JSON files for both input and output in the required format:
 
 - [Trapit - Oracle PL/SQL unit testing module](https://github.com/BrenPatF/trapit_oracle_tester)
 
