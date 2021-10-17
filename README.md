@@ -22,6 +22,11 @@ There are four short recordings on the project (around 2m each), which can also 
 |   | sf_epa_investigations | sf_epa_investigations.mp4     | [3: sf_epa_investigations](https://twitter.com/BrenPatF/status/1447805483415445506)     |
 |   | sf_sn_log_deathstar   | sf_sn_log_deathstar.mp4       | [4: sf_sn_log_deathstar](https://twitter.com/BrenPatF/status/1448165085831127040)       |
 
+There is also a blog post:
+
+- [Unit Testing, Scenarios and Categories: The SCAN Method](https://brenpatf.github.io/jekyll/update/2021/10/17/unit-testing-scenarios-and-categories-the-scan-method.html
+)
+
 ## In this README...
 [&darr; Background](#background)<br />
 [&darr; Scenario Category Analysis (SCAN)](#scenario-category-analysis-scan)<br />
