@@ -24,8 +24,7 @@ There are four short recordings on the project (around 2m each), which can also 
 
 There is also a blog post:
 
-- [Unit Testing, Scenarios and Categories: The SCAN Method](https://brenpatf.github.io/jekyll/update/2021/10/17/unit-testing-scenarios-and-categories-the-scan-method.html
-)
+- [Unit Testing, Scenarios and Categories: The SCAN Method](https://brenpatf.github.io/jekyll/update/2021/10/17/unit-testing-scenarios-and-categories-the-scan-method.html)
 
 ## In this README...
 [&darr; Background](#background)<br />
