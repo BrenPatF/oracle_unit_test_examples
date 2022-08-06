@@ -1,7 +1,7 @@
 
 Database             Time                 Version
 -------------------- -------------------- ------------------------------
-Start: ORCL          09-OCT-2021 08:28:52 Version 19.3.0.0.0
+Start: ORCL          06-NOV-2021 07:55:59 Version 21.3.0.0.0
 
 Create directory input_dir
 
@@ -179,5 +179,5 @@ Grant succeeded.
 
 'END:'||TO_CHAR(SYSDATE,'DD-MON-YY
 ----------------------------------
-End: 09-OCT-2021 08:28:52
+End: 06-NOV-2021 07:56:00
 

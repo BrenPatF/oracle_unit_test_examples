@@ -1,7 +1,7 @@
 
 Database             Time                 Version
 -------------------- -------------------- ------------------------------
-Start: ORCL          09-OCT-2021 08:29:22 Version 19.3.0.0.0
+Start: ORCL          06-NOV-2021 07:56:36 Version 21.3.0.0.0
 
 Drop table tt_units
 DROP TABLE tt_units
@@ -100,5 +100,5 @@ Grant succeeded.
 
 'END:'||TO_CHAR(SYSDATE,'DD-MON-YY
 ----------------------------------
-End: 09-OCT-2021 08:29:23
+End: 06-NOV-2021 07:56:36
 
